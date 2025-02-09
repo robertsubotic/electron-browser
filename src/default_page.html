@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Electron Browser</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #0f0f0f;
+            font-family: Arial, sans-serif;
+        }
+        .search-container {
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #eeeeee;
+            border-radius: 12px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #04025a;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 12px;
+            background-color: #04025a;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0600b3;
+        }
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="search-container">
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png" 
+                alt="Logo"  
+            />
+            <input type="text" placeholder="Search..."  id="searchInput" />
+            <button onclick="go()">Go</button>
+        </div>
+    </body>
+    <script>
+        const go = () => {
+            const input = document.getElementById('searchInput').value;
+            if (input === '') return;
+            window.location.href = `https://google.com/search?q=${input}`;
+        }
+
+        document.getElementById('searchInput').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                go();
+            }
+        });
+    </script>
+</body>
+</html>

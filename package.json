@@ -1,0 +1,12 @@
+{
+    "name": "nodejs-browser",
+    "version": "1.0.0",
+    "description": "A feature-rich browser built with Electron",
+    "main": "src/main.js",
+    "scripts": {
+      "start": "electron C:\\Users\\robis\\Documents\\PROJEKTI\\nodejs_browser\\src\\main.js"
+    },
+    "dependencies": {
+      "electron": "^28.1.0"
+    }
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enhanced Browser</title>
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="browser-container">
+        <div class="tabs-container">
+            <div class="tabs" id="tabs">
+                <!-- Tabs will be added here -->
+            </div>
+            <button class="new-tab-btn" id="newTab">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        
+        <div class="navigation-bar">
+            <div class="nav-buttons">
+                <button id="backBtn" title="Go Back">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button id="forwardBtn" title="Go Forward">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button id="refreshBtn" title="Refresh">
+                    <i class="fas fa-redo"></i>
+                </button>
+                <button id="homeBtn" title="Home">
+                    <i class="fas fa-home"></i>
+                </button>
+            </div>
+            <div class="url-bar">
+                <input type="text" id="urlBar" placeholder="Enter URL or search...">
+                <button id="goButton">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="action-buttons">
+                <button id="bookmarkBtn" title="Bookmark">
+                    <i class="fas fa-star"></i>
+                </button>
+                <button id="settingsBtn" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="browserViews">
+            <!-- Browser views will be added here -->
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
