@@ -1,1 +1,1 @@
-export const URL = 'https://your-api-url.com';
+// Coming soon
