@@ -7,7 +7,7 @@
  * @param {string} [url='']
  */
 class Tab {
-    constructor(id, title = 'New Tab', url = 'file://c:/Users/robis/Documents/PROJEKTI/nodejs_browser/src/default_page.html') {
+    constructor(id, title = 'New Tab', url = 'file://PROJECT_PATH/default_page.html') {
         this.id = id;
         this.title = title;
         this.url = url;
